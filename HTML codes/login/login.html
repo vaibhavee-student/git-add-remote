@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bhoot Bhadwa</title>
+    <link rel="stylesheet" type="text/css" href="login.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet"/>
+</head>
+<body class="main">
+    <div class="wrapper">
+        <form action="">
+        <h1>Login</h1>
+        <div class="input-box">
+         <input placeholder="Username"type="text"required/>
+         <i class='bx bxs-user'></i> 
+
+         </div>
+         <br/>
+         
+         <div class="input-boxs">
+         <input placeholder="password"  type="password" id="password" required/>
+        
+        <i class='bx bxs-lock-alt' ></i>
+         <div class="input-boxes">
+         <i class="bx bx-low-vision" id="eyeicon"></i>
+         </div>
+        <script>
+            let eyeicon= document.getElementById("eyeicon");
+            let password= document.getElementById("password");
+
+        eyeicon.onclick =function(){
+            if(password.type =="password"){
+                password.type ="text";
+                eyeicon.src="eye-open.png";
+
+            }else{
+                password.type ="password";
+                eyeicon.src="eye-close.png";
+
+            }
+        }
+
+        </script>
+         <i class='bx bxs-lock-alt' ></i> 
+        </div>
+         <br/>
+         <div>
+         <input type="checkbox" />Remember me
+         <a  href="#">forgot password? </a>
+         <br/>
+         </div>
+         <p class="hover">
+         <button type="submit" class="btn">login</button>
+         <br/>
+         <br/>
+    
+        Don't have any account?
+        <a href="#" >Register now</a>
+    
+        <br/>
+    
+    </p>
+   
+        </form>
+    </div>
+</body>
+</html>
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <link rel="stylesheet" type="text/css" href="login.css"/>
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel="stylesheet"/>
+    <style>
+        body.main {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #f0f0f0;
+        }
+
+        .wrapper {
+            background: #fff;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        form {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .input-box {
+            position: relative;
+            display: flex;
+            align-items: center;
+            margin-bottom: 15px;
+            width: 100%;
+        }
+
+        .input-box input[type="text"],
+        .input-box input[type="password"] {
+            width: 100%;
+            padding: 10px 40px 10px 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+        }
+
+        .input-box .bx {
+            position: absolute;
+            right: 10px;
+            cursor: pointer;
+        }
+
+        .input-box .bxs-user {
+            left: 10px;
+        }
+
+        .input-box .bxs-lock-alt {
+            left: 10px;
+        }
+
+        .input-box .toggle-password {
+            right: 10px;
+        }
+
+        .btn {
+            padding: 10px 20px;
+            border: none;
+            background-color: #007bff;
+            color: #fff;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: #0056b3;
+        }
+
+        .hover {
+            text-align: center;
+        }
+
+        .hover a {
+            color: #007bff;
+            text-decoration: none;
+        }
+
+        .hover a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body class="main">
+    <div class="wrapper">
+        <form action="">
+            <h1>Login</h1>
+            <div class="input-box">
+                <input placeholder="Username" type="text" required/>
+                <i class='bx bxs-user'></i>
+            </div>
+            <div class="input-box">
+                <input placeholder="Password" type="password" id="password" required/>
+                <i class='bx bxs-lock-alt'></i>
+                <i class='bx bx-low-vision toggle-password' id="eyeicon"></i>
+            </div>
+            <div>
+                <input type="checkbox"/> Remember me
+                <a href="#">Forgot password?</a>
+            </div>
+            <div class="hover">
+                <button type="submit" class="btn">Login</button>
+                <br/><br/>
+                Don't have an account?
+                <a href="#">Register now</a>
+            </div>
+        </form>
+    </div>
+
+    <script>
+        let eyeicon = document.getElementById("eyeicon");
+        let password = document.getElementById("password");
+
+        eyeicon.onclick = function() {
+            if (password.type == "password") {
+                password.type = "text";
+                eyeicon.classList.remove('bx-low-vision');
+                eyeicon.classList.add('bx-show');
+            } else {
+                password.type = "password";
+                eyeicon.classList.remove('bx-show');
+                eyeicon.classList.add('bx-low-vision');
+            }
+        }
+    </script>
+</body>
+</html>
+ -->

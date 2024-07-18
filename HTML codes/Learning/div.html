@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html >
+<head>
+    <title>div</title>
+    <style>
+        .main{
+            width:  500px;
+            height: 50px;
+            background-color: red;
+        
+        }
+        #parent-row-1{
+            width: 500px;
+            height: 250px;
+            background-color:aqua;
+            
+        }
+         #parent-row-2{
+            width: 500px;
+            height: 250px;
+            background-color: azure;
+         }
+         .col1{
+            width: 250px;
+            height: 250px;
+            background-color: blueviolet;
+            float: right;
+         }
+        .col2{
+            width: 250px;
+            height: 250px;
+            background-color: blue;
+            float:right;
+        }
+    </style>
+</head>
+<body>
+    <div class="main"><!--main div-->
+        <div id="parent-row-1"><!--parent row1-->
+            <div class="col1"><!--col1-->
+                 HOME
+            </div>
+            <div class="col2"><!--col2-->
+                About
+            </div>
+        </div>
+        </div>
+   <hr/>
+        <div id="parent-row-2"><!--Parent row2-->
+          <div class="col1"><!--col1-->
+            Gallery
+          </div>
+          <div class="col2" ><!--col2-->
+            COURSE
+          </div>
+        </div> 
+    </div>  
+</body>
+</html>
