@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    
+        .container{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform:translate(-50%,-50%); 
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+   
+        <button onclick="changeColor()" >click me</button>
+    </div>
+    <script>
+        const color=["pink","yellow","purple","blue","green","grey","orange"];
+        function changeColor(){
+        let index=Math.floor(Math.random() * color.length);
+         let randomColor = color[index];
+        document.body.style.backgroundColor=randomColor;
+     }
+
+    </script>
+</body>
+</html>
